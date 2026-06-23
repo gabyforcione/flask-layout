@@ -1,5 +1,13 @@
 {% extends "layout.html" %}
 
 {% block main %}
-    <h1>Home</h1>
-{% endblock %}
+    <h1>Ola, {{ aluno['nome'] }} </h1>
+    <h2>Turma: {{ aluno['turma'] }} </h2>
+  <ul>
+    {% for professor in professores %}
+        <li>{{ profesore['nome'] }} - {{ professor['materia'] }}</li>
+        {% endfor %}
+  </ul>
+
+
+    {% endblock %}
